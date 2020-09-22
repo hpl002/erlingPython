@@ -37,7 +37,7 @@ if __name__ == "__main__":
     in_1 = "ATAGCAGT"
     out_1 = complement(in_1)
     
-    print(f"The complement of {in_1} is {out_1}")
+    print(f"The complement of {in_1} is {out_1}") #denne vil ikke fungere i python 2 (i det minste den versjonen jeg hadde --> Python 2.7.16 ). Hør evt med foreleser om hvilke versjon dere skal kjøre. 
     if out_1 == "ACTGCTAT":
         print('That is correct!')
 
@@ -49,5 +49,14 @@ if __name__ == "__main__":
 
 
 
- 
+#PYTHON 2
+#❯ python del_1.py
+#  File "del_1.py", line 2
+#SyntaxError: Non-ASCII character '\xc3' in file del_1.py on line 2, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+
+#PYTHON 3
+#❯ python3 del_1.py
+#The complement of ATAGCAGT is ACTGCTAT
+#That is correct!
+#Good! Applying complement twice returns the original
  
